@@ -21,7 +21,7 @@ exports.indexRestaurant = async function (req, res) {
   }
 }
 
-exports.show = async function (req, res) { // show -> id / index -> all
+exports.show = async function (req, res) { // show -> id / index -> all o
   // Only returns PUBLIC information of products
   try {
     const product = await Product.findByPk(req.params.productId, {
